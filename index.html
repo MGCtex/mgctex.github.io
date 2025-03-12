@@ -3,59 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>MGC - Coming Soon</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        :root {
+            --primary-color: #3454d1;
+            --secondary-color: #1d2951;
+            --accent-color: #f4ac45;
+            --text-color: #333;
+            --light-color: #f8f9fa;
+        }
+        
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            box-sizing: border-box;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-        header {
+        
+        .container {
+            max-width: 1000px;
+            margin: 2rem;
+            padding: 3rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             text-align: center;
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid #eee;
         }
+        
+        .logo {
+            margin-bottom: 2rem;
+        }
+        
+        .logo-text {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: 2px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 3rem;
+        }
+        
         h1 {
-            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary-color);
         }
-        .content {
-            margin-bottom: 2rem;
+        
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        footer {
-            text-align: center;
+        
+        .construction-icon {
+            font-size: 5rem;
+            margin: 2rem 0;
+            color: var(--accent-color);
+        }
+        
+        .progress-bar {
+            height: 20px;
+            background-color: #e9ecef;
+            border-radius: 10px;
+            margin: 2rem 0;
+            overflow: hidden;
+        }
+        
+        .progress {
+            width: 35%;
+            height: 100%;
+            background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+            border-radius: 10px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                opacity: 0.6;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.6;
+            }
+        }
+        
+        .contact {
             margin-top: 2rem;
-            padding-top: 1rem;
+            padding-top: 2rem;
             border-top: 1px solid #eee;
-            color: #7f8c8d;
+        }
+        
+        .contact h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        .contact p {
+            font-size: 1rem;
+        }
+        
+        .email {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .email:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            margin-top: 1rem;
             font-size: 0.9rem;
+            color: #6c757d;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Welcome to MGC</h1>
-        </header>
+        <div class="logo">
+            <div class="logo-text">MGC</div>
+            <div class="tagline">Excellence in Everything We Do</div>
+        </div>
         
-        <div class="content">
-            <h2>About</h2>
-            <p>This is a simple HTML page that talks about MGC.</p>
+        <h1>Our Website is Under Construction</h1>
+        
+        <p>We're working hard to bring you an amazing new experience. The MGC website is currently being developed to better serve our community and showcase our organization's mission and achievements.</p>
+        
+        <div class="construction-icon">🏗️</div>
+        
+        <p>Our team is making progress every day to create a website that reflects our commitment to excellence and innovation.</p>
+        
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        
+        <p>Please check back soon. We anticipate launching in the coming weeks with a full range of features and information about our services, team, and upcoming events.</p>
+        
+        <div class="contact">
+            <h2>Need to get in touch?</h2>
+            <p>While our website is under construction, you can still reach us at: <a href="mailto:info@mgc-organization.com" class="email">info@mgc-organization.com</a></p>
         </div>
         
         <footer>
-            <p>&copy; 2025 MGC. All rights reserved.</p>
+            <p>&copy; 2025 MGC Organization. All rights reserved.</p>
         </footer>
     </div>
 </body>
